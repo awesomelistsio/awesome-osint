@@ -1,0 +1,203 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/vscode-copilot-chat-main"
+		}
+	],
+	"settings": {
+		"workbench.editor.enablePreviewFromCodeNavigation": true,
+		"gitlens.views.commits.showStashes": true,
+		"gitlens.views.repositories.includeWorkingTree": true,
+		"gitlens.views.repositories.showStashes": true,
+		"javascript.preferGoToSourceDefinition": true,
+		"javascript.referencesCodeLens.enabled": true,
+		"inlineChat.enableV2": true,
+		"vscode-edge-devtools.browserFlavor": "Default",
+		"vscode-edge-devtools.showWorkers": true,
+		"vscode-edge-devtools.useHttps": true,
+		"vscode-edge-devtools.browserArgs": [
+			"9222",
+			"10000"
+		]
+	},
+	"launch": {
+		"configurations": [
+
+			{
+				"name": "Python Debugger: FastAPI",
+				"type": "debugpy",
+				"request": "launch",
+				"module": "uvicorn",
+				"args": [
+					"main:app",
+					"--reload"
+				],
+				"jinja": true
+			},
+			{
+				"name": "Python Debugger: FastAPI",
+				"type": "debugpy",
+				"request": "launch",
+				"module": "uvicorn",
+				"args": [
+					"main:app",
+					"--reload"
+				],
+				"jinja": true
+			},
+			{
+				"name": "Python Debugger: Attach using Process Id",
+				"type": "debugpy",
+				"request": "attach",
+				"processId": "${command:pickProcess}"
+			},
+			{
+				"name": "Python Debugger: FastAPI",
+				"type": "debugpy",
+				"request": "launch",
+				"module": "uvicorn",
+				"args": [
+					"main:app",
+					"--reload"
+				],
+				"jinja": true
+			},
+			{
+				"name": "Python Debugger: Attach using Process Id",
+				"type": "debugpy",
+				"request": "attach",
+				"processId": "${command:pickProcess}"
+			},
+			{
+				"name": "Python Debugger: Current File with Arguments",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"args": "${command:pickArgs}"
+			},
+			{
+				"args": [
+					"--extensionDevelopmentPath=${workspaceFolder}"
+				],
+				"name": "Launch Extension",
+				"outFiles": [
+					"${workspaceFolder}/out/**/*.js"
+				],
+				"preLaunchTask": "npm",
+				"request": "launch",
+				"type": "extensionHost"
+			},
+			{
+				"name": "(lldb) Launch",
+				"type": "cppdbg",
+				"request": "launch",
+				"program": "enter program name, for example ${workspaceFolder}/a.out",
+				"args": [],
+				"stopAtEntry": false,
+				"cwd": "${fileDirname}",
+				"environment": [],
+				"externalConsole": false,
+				"MIMode": "lldb"
+			},
+			{
+				"name": "Python Debugger: Current File",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal"
+			},
+			{
+				"command": "npm start",
+				"name": "Run npm start",
+				"request": "launch",
+				"type": "node-terminal"
+			},
+			{
+				"name": "Python Debugger: Current File",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal"
+			},
+			{
+				"name": "Python Debugger: Current File",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal"
+			},
+			{
+				"name": "Launch Program",
+				"program": "${workspaceFolder}/app.js",
+				"request": "launch",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"type": "node"
+			},
+			{
+				"type": "node",
+				"request": "launch",
+				"name": "Launch Program",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"program": "${file}"
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge",
+				"request": "launch",
+				"runtimeArgs": [
+					"--remote-debugging-port=9222"
+				],
+				"url": "/Users/user/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.9/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge in headless mode",
+				"request": "launch",
+				"runtimeArgs": [
+					"--headless",
+					"--remote-debugging-port=9222"
+				],
+				"url": "/Users/user/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.9/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "vscode-edge-devtools.debug",
+				"name": "Open Edge DevTools",
+				"request": "attach",
+				"url": "/Users/user/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.9/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch Edge Headless and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge in headless mode",
+					"Open Edge DevTools"
+				]
+			},
+			{
+				"name": "Launch Edge and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge",
+					"Open Edge DevTools"
+				]
+			}
+		]
+	}
+}

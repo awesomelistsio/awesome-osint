@@ -1,0 +1,23 @@
+# Query: .editorconfig
+# Flags: CaseSensitive RegExp
+# ContextLines: 1
+
+14 results - 3 files
+
+awesome-osint • .editorconfig:
+  1: # .editorconfig
+
+vscode-copilot-chat-main • package-lock.json:
+   8526: 		"node_modules/editorconfig": {
+   8528: 			"resolved": "https://registry.npmjs.org/editorconfig/-/editorconfig-0.15.3.tgz",
+   8538: 				"editorconfig": "bin/editorconfig"
+   8541: 		"node_modules/editorconfig/node_modules/commander": {
+   8547: 		"node_modules/editorconfig/node_modules/lru-cache": {
+   8557: 		"node_modules/editorconfig/node_modules/semver": {
+   8566: 		"node_modules/editorconfig/node_modules/yallist": {
+  17476: 				"editorconfig": "^0.15.0"
+
+vscode-copilot-chat-main • test/prompts/fixtures/devcontainer/devContainerConfigTestData.json:
+    54:             ".editorconfig",
+   555:             ".editorconfig",
+  1112:             ".editorconfig",

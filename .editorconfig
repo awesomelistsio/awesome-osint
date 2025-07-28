@@ -15,3 +15,4 @@ trim_trailing_whitespace = false  # Preserve line breaks in Markdown
 
 [*.py]
 indent_size = 4
+

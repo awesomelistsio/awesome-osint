@@ -1,0 +1,1 @@
+Error: /Users/user/Downloads/vscode-copilot-chat-main/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 32327 (line 779 column 148). Try running 'npm install @vscode/test-cli', and then 'Refresh Tests'
