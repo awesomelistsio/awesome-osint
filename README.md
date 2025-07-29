@@ -77,6 +77,7 @@ OSINT (Open Source Intelligence) involves collecting and analyzing publicly avai
 ## Dark Web OSINT
 
 - [Ahmia](https://ahmia.fi/) – Search engine for Tor hidden services (uses clearnet).
+- [InfoStealers](https://infostealers.info/en/info) - Indexes darknet-exposed infostealer logs and makes them searchable and actionable for investigators.
 - [OnionLand](https://onionlandsearchengine.com/) – Search engine for .onion sites.
 - [Tor Project](https://www.torproject.org/) – Software for accessing the Tor network safely and anonymously.
 
